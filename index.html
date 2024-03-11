@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Shot</title>
+    <style>
+      html,
+      body {
+        margin: 0;
+        padding: 0;
+      }
+      button {
+        background-color: dodgerblue;
+        border: none;
+        border-radius: 4px;
+        color: white;
+        cursor: pointer;
+        left: 24px;
+        line-height: 1.5rem;
+        position: absolute;
+        top: 24px;
+      }
+      a {
+        left: 24px;
+        padding: 0;
+        position: absolute;
+        top: 84px;
+      }
+      img {
+        border: 1px solid white;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="app">
+      <video autoplay id="tiny" loop muted src="./demo/tiny.webm"></video>
+      <button id="shot" name="shot" title="Click To Get Video Shot" type="button">Get Video Shot</button>
+      <a id="download" href="" download="video-shot.png">
+        <img alt="video shot" id="capture" src="">
+      </a>
+    </div>
+    <script type="module" src="./demo/video.ts"></script>
+  </body>
+</html>

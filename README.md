@@ -13,7 +13,16 @@ npm install @jugar/html-shot
 ```ts
 import { videoShot } from '@jugar/html-shot'
 
-videoShot('streamingVideo')
+const url = videoShot('streamingVideo')
+```
+
+# 截图返回URL（图片压缩）
+
+```ts
+import { videoShot } from '@jugar/html-shot'
+
+// 缩小五倍
+const url = videoShot('streamingVideo'， 0.2)
 ```
 
 # 截图下载
